@@ -1,5 +1,10 @@
 <?php
 require_once('lib/config.php');
+
+$currentPage = basename($_SERVER['SCRIPT_NAME']);
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -20,20 +25,16 @@ require_once('lib/config.php');
 
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-
             <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none">
                 <img src="assets/images/logo-cuisinea-horizontal.jpg" alt="logo cuisinea" width="250">
             </a>
-
-
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.php" class="nav-link px-2 link-secondary">Accueil</a></li>
-                <li><a href="recettes.php" class="nav-link px-2">Nos recettes</a></li>
-                <li><a href="#" class="nav-link px-2">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2">About</a></li>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
+                <?php foreach ($mainMenu as $key => $value) { ?>
+                    <li class="nav-item"><a href="<?= $key; ?>" class="nav-link <?php if ($currentPage === $key) {
+                                                                                    echo 'active';
+                                                                                } ?>"><?= $value; ?></a></li>
+                <?php } ?>
             </ul>
-
             <div class="col-md-3 text-end">
                 <button type="button" class="btn btn-outline-primary me-2">Login</button>
                 <button type="button" class="btn btn-primary">Sign-up</button>
