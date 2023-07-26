@@ -1,6 +1,8 @@
 <?php
 require_once('templates/header.php');
 require_once('lib/recipe.php');
+
+
 ?>
 
 
@@ -24,7 +26,8 @@ require_once('lib/recipe.php');
 
     <?php foreach ($recipes as $key => $recipe) {
         include('templates/recipe_partial.php');
-    } ?>
+    }
+    ?>
 
 
 
