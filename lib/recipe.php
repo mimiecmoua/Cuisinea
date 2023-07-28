@@ -32,8 +32,10 @@ function getRecipes(PDO $pdo, int $limit = null)
     }
 
     $query->execute();
-    return  $query->fetchAll();
+    return $query->fetchAll();
 }
+
+
 
 function saveRecipe(PDO $pdo, int $category, string $title, string $description, string $ingredients, string $instructions, string|null $image)
 {

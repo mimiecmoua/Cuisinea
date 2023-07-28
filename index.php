@@ -31,11 +31,8 @@ $recipes = getRecipes($pdo, _HOME_RECIPES_LIMIT_);
     }
     ?>
 
-
-
-
 </div>
 
 <?php
-include('templates/footer.php');
+require_once('templates/footer.php');
 ?>
