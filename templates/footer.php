@@ -5,7 +5,7 @@
                 <use xlink:href="#bootstrap"></use>
             </svg>
         </a>
-        <p class="text-body-secondary">© 2023</p>
+        <p class="text-body-secondary">© 2024 By webOara </p>
     </div>
 
     <di class="col mb-3">

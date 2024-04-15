@@ -22,9 +22,9 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom img-fluid">
             <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <img src="assets/images/logo-cuisinea-horizontal.jpg" alt="logo cuisinea" width="250">
+                <img src="assets/images/Cuisinea-logo.png" alt="logo cuisinea" width="300">
             </a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
                 <?php foreach ($mainMenu as $key => $value) { ?>
